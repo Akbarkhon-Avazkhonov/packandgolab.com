@@ -133,7 +133,7 @@ export function ToolLabSection() {
                     {tool.rating}
                   </span>
                   <span className="font-mono text-[10px] text-muted-foreground">
-                    ({tool.reviews.toLocaleString()} reviews)
+                    ({new Intl.NumberFormat("en-US").format(tool.reviews)} reviews)
                   </span>
                 </div>
 
